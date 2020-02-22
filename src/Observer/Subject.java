@@ -1,7 +1,7 @@
 package Observer;
 
 public interface Subject {
-    void addSubscriber(Observer observer);
-    void deleteSubscriber();
+    void subscribe(ObserverClass observer);
+    void unsubscribe();
     void publish();
 }

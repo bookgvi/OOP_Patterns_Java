@@ -1,3 +1,5 @@
-# OOP_Patterns_Java
-## DI
-## Observer
+Patterns
+---
+---
+## 1) DI
+## 2) Observer

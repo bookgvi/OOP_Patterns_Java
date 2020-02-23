@@ -8,7 +8,8 @@ public class QuickSort extends PartionIt implements Sort {
     private int[] tempArr;
 
     public QuickSort(int[] unsortedArr) {
-        this.tempArr = Arrays.copyOf(unsortedArr, unsortedArr.length);
+        int length = unsortedArr.length;
+        this.tempArr = Arrays.copyOf(unsortedArr, length);
     }
     @Override
     public void makeSort(int... values) {

@@ -12,13 +12,10 @@ public class PartionIt {
             if (leftPtr >= rightPtr)
                 break;
             else {
-                int[] tempLR = Utils.swap(arr, leftPtr, rightPtr);
-                leftPtr = tempLR[0];
-                rightPtr = tempLR[1];
+                Utils.swap(arr, leftPtr, rightPtr);
             }
         }
-        int[] tempLR = Utils.swap(arr, leftPtr, rightBound);
-        leftPtr = tempLR[0];
+        Utils.swap(arr, leftPtr, rightBound);
         return leftPtr;
     }
 }

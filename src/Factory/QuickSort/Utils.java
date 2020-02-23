@@ -1,10 +1,9 @@
 package Factory.QuickSort;
 
 public class Utils {
-    public static int[] swap(int[] arr, int left, int right) {
-        arr[left] = arr[left] ^ arr[right];
-        arr[right] = arr[left] ^ arr[right];
-        arr[left] = arr[left] ^ arr[right];
-        return new int[]{ left, right };
+    public static void swap(int[] arr, int left, int right) {
+       int temp = arr[left];
+       arr[left] = arr[right];
+       arr[right] = temp;
     }
 }

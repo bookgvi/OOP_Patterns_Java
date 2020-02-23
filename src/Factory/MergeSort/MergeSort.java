@@ -15,13 +15,13 @@ public class MergeSort extends Merge implements Sort {
     }
 
     @Override
-    public void makeSort(int[] arr, int... values) {
+    public void makeSort(int... values) {
         int leftBound = values[0];
         int rightBound = values[1];
         if (leftBound != rightBound) {
             int mid = (rightBound + leftBound) / 2;
-            makeSort(arr, leftBound, mid);
-            makeSort(arr, mid + 1, rightBound);
+            makeSort(leftBound, mid);
+            makeSort(mid + 1, rightBound);
             merge(tempArr, resArr, leftBound, mid, rightBound);
         }
     }

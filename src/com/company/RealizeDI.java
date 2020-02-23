@@ -1,15 +1,13 @@
 package com.company;
 
 import DI.MergeSort;
+import Utils.ArrayCreate;
 import Utils.SpeedTest;
 
-public class RealizeDI {
-    public static void exec() {
-        final int ARRAY_LENGTH = 1000000;
+public class RealizeDI implements Realize {
+    public static void exec(int ARRAY_LENGTH) {
         final int TESTS_COUNT = 1;
-        int[] arr = new int[ARRAY_LENGTH];
-        for (int i = 0; i < ARRAY_LENGTH; i++)
-            arr[i] = (int) (Math.random() * ARRAY_LENGTH + 1);
+        int[] arr = ArrayCreate.UnsortedArray(ARRAY_LENGTH);
         MergeSort ms = new MergeSort(arr);
         SpeedTest<int[]> speedTest = new SpeedTest<>(TESTS_COUNT);
         double result = speedTest.exec(ms);

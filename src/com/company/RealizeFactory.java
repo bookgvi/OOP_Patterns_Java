@@ -1,27 +1,37 @@
 package com.company;
 
 import Factory_DI.AppFactory;
-import Factory_DI.Interfaces.ExecuteFactory;
-import Factory_DI.Interfaces.Realize;
+import Factory_DI.SortFactory.MergeSortFactory;
+import Factory_DI.SortFactory.QuickSortFactory;
+import Utils.ArrayCreate;
 
-public class RealizeFactory implements Realize {
+public class RealizeFactory {
 
-    @Override
-    public void exec(ExecuteFactory sf, int[] arr, int ARRAY_LENGTH, int TEST_COUNT) {
+    public static void exec() {
+        final int ARRAY_LENGTH = 2500000;
+        final int TEST_COUNT = 30;
 
-        AppFactory appFactory = new AppFactory(sf, arr);
-        appFactory.exec();
+        int[] unsortedArray = ArrayCreate.UnsortedArray(ARRAY_LENGTH);
+
 
         /*
-         * Замер скорости работы алгоритма
+         * Merge sort
          */
-//        AppFactoryWithSpeedTest appWithTest = new AppFactoryWithSpeedTest(sf, arr, TEST_COUNT);
-//        System.out.printf("Скорость сортировки массива %d элементов = %.2f мсек.\n", ARRAY_LENGTH, (double) appWithTest.ETA()/1000);
+        System.out.print("MergeSort: ");
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < TEST_COUNT; i++)
+            new AppFactory(new MergeSortFactory(), unsortedArray).exec();
+        long res = System.currentTimeMillis() - start;
+        System.out.printf("Time for sort (%d) = %.2f sec.\n", ARRAY_LENGTH, (double) (res / TEST_COUNT) / 1000);
 
-        //        Вывод отсортированного массива
-//        for (int val: appWithTest.getArr()) {
-//            System.out.print(val + " ");
-//        }
-//        System.out.println();
+        /*
+        * Quick sort
+        */
+        System.out.print("QuickSort: ");
+        start = System.currentTimeMillis();
+        for (int i = 0; i < TEST_COUNT; i++)
+            new AppFactory(new QuickSortFactory(), unsortedArray).exec();
+        res = System.currentTimeMillis() - start;
+        System.out.printf("Time for sort (%d) = %.2f sec.\n", ARRAY_LENGTH, (double) (res / TEST_COUNT) / 1000);
     }
 }

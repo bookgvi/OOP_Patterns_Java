@@ -5,7 +5,7 @@ import java.util.Arrays;
 import Factory.Interfaces.Sort;
 
 public class QuickSort extends PartionIt implements Sort {
-    private int[] tempArr;
+    private int[] tempArr = new int[0];
 
     public QuickSort(int[] unsortedArr) {
         int length = unsortedArr.length;

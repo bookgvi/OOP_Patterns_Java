@@ -2,6 +2,9 @@ package Factory;
 
 import Factory.Interfaces.ExecuteFactory;
 
+/*
+* Порождает ошибку - переполнение стэка вызовов!!!!
+*/
 public class AppFactoryWithSpeedTest extends AppFactory {
     private int TEST_COUNT;
     private long timeDiff = 0;

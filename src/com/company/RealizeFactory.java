@@ -1,5 +1,6 @@
 package com.company;
 
+import Factory.AppFactory;
 import Factory.AppFactoryWithSpeedTest;
 import Factory.Interfaces.ExecuteFactory;
 
@@ -7,11 +8,14 @@ public class RealizeFactory implements Realize {
 
     public static void exec(ExecuteFactory sf, int[] arr, int ARRAY_LENGTH, int TEST_COUNT) {
 
+        AppFactory appFactory = new AppFactory(sf, arr);
+        appFactory.exec();
+
         /*
          * Замер скорости работы алгоритма
          */
-        AppFactoryWithSpeedTest appWithTest = new AppFactoryWithSpeedTest(sf, arr, TEST_COUNT);
-        System.out.printf("Скорость сортировки массива %d элементов = %.2f мсек.\n", ARRAY_LENGTH, (double) appWithTest.ETA()/1000);
+//        AppFactoryWithSpeedTest appWithTest = new AppFactoryWithSpeedTest(sf, arr, TEST_COUNT);
+//        System.out.printf("Скорость сортировки массива %d элементов = %.2f мсек.\n", ARRAY_LENGTH, (double) appWithTest.ETA()/1000);
 
         //        Вывод отсортированного массива
 //        for (int val: appWithTest.getArr()) {

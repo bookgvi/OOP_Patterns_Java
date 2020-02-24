@@ -1,7 +1,7 @@
-package Factory;
+package Factory_DI;
 
-import Factory.Interfaces.ExecuteFactory;
-import Factory.Interfaces.Sort;
+import Factory_DI.Interfaces.ExecuteFactory;
+import Factory_DI.Interfaces.Sort;
 
 public class AppFactory {
     private Sort sort;

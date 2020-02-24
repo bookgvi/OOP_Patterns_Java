@@ -1,4 +1,4 @@
-package Factory.QuickSort;
+package Factory_DI.QuickSort;
 
 public class PartionIt {
     protected int partionIt(int[] arr, int leftBound, int pivot, int rightBound) {

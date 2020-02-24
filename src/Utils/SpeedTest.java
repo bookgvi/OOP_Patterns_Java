@@ -1,24 +1,24 @@
 package Utils;
 
-import DI.Execute;
+import Factory_DI.Interfaces.ExecuteFactory;
+import Factory_DI.Interfaces.Realize;
 
-public class SpeedTest<T> {
-    private int TEST_COUNT;
+public class SpeedTest {
+    private Realize realize;
+    private int ARRAY_LENGTH = 0;
+    private int TEST_COUNT = 0;
 
-    public SpeedTest(int TEST_COUNT) {
+    public SpeedTest(Realize realize, int ARRAY_LENGTH, int TEST_COUNT) {
+        this.realize = realize;
+        this.ARRAY_LENGTH = ARRAY_LENGTH;
         this.TEST_COUNT = TEST_COUNT;
     }
 
-    private long speedTest(Execute<T> execute) {
+    public void invoke(ExecuteFactory sf, int[] arr) {
         long start = System.currentTimeMillis();
-        execute.exec();
-        return System.currentTimeMillis() - start;
-    }
-
-    public long exec(Execute<T> execute) {
-        long result = 0;
         for (int i = 0; i < TEST_COUNT; i++)
-            result += this.speedTest(execute);
-        return result;
+            realize.exec(sf, arr, ARRAY_LENGTH, TEST_COUNT);
+        long res = System.currentTimeMillis() - start;
+        System.out.printf("Time for sort (%d) = %.2f sec.\n", ARRAY_LENGTH, (double) (res / TEST_COUNT) / 1000);
     }
 }

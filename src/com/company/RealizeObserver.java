@@ -3,7 +3,7 @@ package com.company;
 import Observer.ObserverClass;
 import Observer.SubjectClass;
 
-public class RealizeObserver implements Realize {
+public class RealizeObserver {
     public static void exec() {
         SubjectClass subject = new SubjectClass();
         ObserverClass observer = new ObserverClass();

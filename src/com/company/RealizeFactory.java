@@ -1,12 +1,13 @@
 package com.company;
 
-import Factory.AppFactory;
-import Factory.AppFactoryWithSpeedTest;
-import Factory.Interfaces.ExecuteFactory;
+import Factory_DI.AppFactory;
+import Factory_DI.Interfaces.ExecuteFactory;
+import Factory_DI.Interfaces.Realize;
 
 public class RealizeFactory implements Realize {
 
-    public static void exec(ExecuteFactory sf, int[] arr, int ARRAY_LENGTH, int TEST_COUNT) {
+    @Override
+    public void exec(ExecuteFactory sf, int[] arr, int ARRAY_LENGTH, int TEST_COUNT) {
 
         AppFactory appFactory = new AppFactory(sf, arr);
         appFactory.exec();

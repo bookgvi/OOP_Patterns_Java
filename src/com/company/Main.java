@@ -1,9 +1,9 @@
 package com.company;
 
-import DI.MergeSort;
-import Factory.SortFactory.MergeSortFactory;
-import Factory.SortFactory.QuickSortFactory;
+import Factory_DI.SortFactory.MergeSortFactory;
+import Factory_DI.SortFactory.QuickSortFactory;
 import Utils.ArrayCreate;
+import Utils.SpeedTest;
 
 public class Main {
 
@@ -11,25 +11,19 @@ public class Main {
         final int ARRAY_LENGTH = 2500000;
         final int TEST_COUNT = 30;
 
-//        RealizeDI.exec(ARRAY_LENGTH);
-//        RealizeObserver.exec();
-//        RealizeSingleton.exec();
+        RealizeObserver.exec();
+        RealizeSingleton.exec();
 
         int[] unsortedArray = ArrayCreate.UnsortedArray(ARRAY_LENGTH);
+        RealizeFactory rf = new RealizeFactory();
+        SpeedTest speedTest = new SpeedTest(rf, ARRAY_LENGTH, TEST_COUNT);
+
         MergeSortFactory msf = new MergeSortFactory();
         QuickSortFactory qsf = new QuickSortFactory();
         System.out.print("QuickSort: ");
-        long start = System.currentTimeMillis();
-        for (int i = 0; i < TEST_COUNT; i++)
-            RealizeFactory.exec(qsf, unsortedArray, ARRAY_LENGTH, TEST_COUNT);
-        long res = System.currentTimeMillis() - start;
-        System.out.printf("Time for sort (%d) = %.2fms\n", unsortedArray.length, (double) (res / TEST_COUNT) / 1000);
+        speedTest.invoke(qsf, unsortedArray);
 
         System.out.print("MergeSort: ");
-        start = System.currentTimeMillis();
-        for (int i = 0; i < TEST_COUNT; i++)
-            RealizeFactory.exec(msf, unsortedArray, ARRAY_LENGTH, TEST_COUNT);
-        res = System.currentTimeMillis() - start;
-        System.out.printf("Time for sort (%d) = %.2fms\n", unsortedArray.length, (double) (res / TEST_COUNT) / 1000);
+        speedTest.invoke(msf, unsortedArray);
     }
 }

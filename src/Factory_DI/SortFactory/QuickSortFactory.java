@@ -1,8 +1,8 @@
-package Factory.SortFactory;
+package Factory_DI.SortFactory;
 
-import Factory.Interfaces.ExecuteFactory;
-import Factory.Interfaces.Sort;
-import Factory.QuickSort.QuickSort;
+import Factory_DI.Interfaces.ExecuteFactory;
+import Factory_DI.Interfaces.Sort;
+import Factory_DI.QuickSort.QuickSort;
 
 public class QuickSortFactory implements ExecuteFactory {
     @Override

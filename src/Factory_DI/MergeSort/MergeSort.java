@@ -1,8 +1,8 @@
-package Factory.MergeSort;
+package Factory_DI.MergeSort;
 
 import java.util.Arrays;
 
-import Factory.Interfaces.Sort;
+import Factory_DI.Interfaces.Sort;
 
 public class MergeSort extends Merge implements Sort {
     private int[] tempArr;

@@ -1,4 +1,4 @@
-package Factory.MergeSort;
+package Factory_DI.MergeSort;
 
 public class Merge {
     protected void merge(int[] tempArr, int[] resArr, int leftBound, int mid, int rightBound) {

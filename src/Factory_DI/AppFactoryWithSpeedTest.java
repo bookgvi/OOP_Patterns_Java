@@ -1,6 +1,6 @@
-package Factory;
+package Factory_DI;
 
-import Factory.Interfaces.ExecuteFactory;
+import Factory_DI.Interfaces.ExecuteFactory;
 
 /*
 * Порождает ошибку - переполнение стэка вызовов!!!!

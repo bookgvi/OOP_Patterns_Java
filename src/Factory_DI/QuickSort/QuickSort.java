@@ -1,8 +1,8 @@
-package Factory.QuickSort;
+package Factory_DI.QuickSort;
 
 import java.util.Arrays;
 
-import Factory.Interfaces.Sort;
+import Factory_DI.Interfaces.Sort;
 
 public class QuickSort extends PartionIt implements Sort {
     private int[] tempArr = new int[0];

@@ -2,11 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21f68770-7d39-4bc1-85b6-612b9532c211" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Factory_DI/Interfaces/Realize.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factory/AppFactoryWithSpeedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory/AppFactoryWithSpeedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factory/QuickSort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory/QuickSort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DI/Execute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DI/MergeSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/AppFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory_DI/AppFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/AppFactoryWithSpeedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory_DI/AppFactoryWithSpeedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/Interfaces/ExecuteFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory_DI/Interfaces/ExecuteFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/Interfaces/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory_DI/Interfaces/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/MergeSort/Merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory_DI/MergeSort/Merge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/MergeSort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory_DI/MergeSort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/QuickSort/PartionIt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory_DI/QuickSort/PartionIt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/QuickSort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory_DI/QuickSort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/QuickSort/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory_DI/QuickSort/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/SortFactory/MergeSortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory_DI/SortFactory/MergeSortFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/SortFactory/QuickSortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory_DI/SortFactory/QuickSortFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/SpeedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/SpeedTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Realize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RealizeDI.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/RealizeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RealizeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RealizeObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RealizeObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RealizeSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RealizeSingleton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +97,7 @@
       <workItem from="1582491563852" duration="8733000" />
       <workItem from="1582534631733" duration="215000" />
       <workItem from="1582541891566" duration="1898000" />
-      <workItem from="1582544495037" duration="1772000" />
+      <workItem from="1582544495037" duration="3463000" />
     </task>
     <servers />
   </component>
@@ -100,10 +118,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="608" y="176" width="374" height="573" key="#com.intellij.ide.util.MemberChooser" timestamp="1582494797831">
+    <state x="608" y="176" width="374" height="573" key="#com.intellij.ide.util.MemberChooser" timestamp="1582547826042">
       <screen x="0" y="28" width="1600" height="872" />
     </state>
-    <state x="608" y="176" width="374" height="573" key="#com.intellij.ide.util.MemberChooser/0.28.1600.872@0.28.1600.872" timestamp="1582494797830" />
+    <state x="608" y="176" width="374" height="573" key="#com.intellij.ide.util.MemberChooser/0.28.1600.872@0.28.1600.872" timestamp="1582547826042" />
     <state x="545" y="85" width="489" height="754" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582453276768">
       <screen x="0" y="28" width="1600" height="872" />
     </state>
@@ -116,22 +134,22 @@
       <screen x="0" y="28" width="1600" height="872" />
     </state>
     <state x="150" y="100" width="1280" height="725" key="DiffContextDialog/0.28.1600.872@0.28.1600.872" timestamp="1582547098649" />
-    <state width="1556" height="219" key="GridCell.Tab.0.bottom" timestamp="1582546972562">
+    <state width="1556" height="219" key="GridCell.Tab.0.bottom" timestamp="1582548768849">
       <screen x="0" y="28" width="1600" height="872" />
     </state>
-    <state width="1556" height="219" key="GridCell.Tab.0.bottom/0.28.1600.872@0.28.1600.872" timestamp="1582546972562" />
-    <state width="1556" height="219" key="GridCell.Tab.0.center" timestamp="1582546972562">
+    <state width="1556" height="219" key="GridCell.Tab.0.bottom/0.28.1600.872@0.28.1600.872" timestamp="1582548768849" />
+    <state width="1556" height="219" key="GridCell.Tab.0.center" timestamp="1582548768848">
       <screen x="0" y="28" width="1600" height="872" />
     </state>
-    <state width="1556" height="219" key="GridCell.Tab.0.center/0.28.1600.872@0.28.1600.872" timestamp="1582546972562" />
-    <state width="1556" height="219" key="GridCell.Tab.0.left" timestamp="1582546972562">
+    <state width="1556" height="219" key="GridCell.Tab.0.center/0.28.1600.872@0.28.1600.872" timestamp="1582548768848" />
+    <state width="1556" height="219" key="GridCell.Tab.0.left" timestamp="1582548768848">
       <screen x="0" y="28" width="1600" height="872" />
     </state>
-    <state width="1556" height="219" key="GridCell.Tab.0.left/0.28.1600.872@0.28.1600.872" timestamp="1582546972562" />
-    <state width="1556" height="219" key="GridCell.Tab.0.right" timestamp="1582546972562">
+    <state width="1556" height="219" key="GridCell.Tab.0.left/0.28.1600.872@0.28.1600.872" timestamp="1582548768848" />
+    <state width="1556" height="219" key="GridCell.Tab.0.right" timestamp="1582548768849">
       <screen x="0" y="28" width="1600" height="872" />
     </state>
-    <state width="1556" height="219" key="GridCell.Tab.0.right/0.28.1600.872@0.28.1600.872" timestamp="1582546972562" />
+    <state width="1556" height="219" key="GridCell.Tab.0.right/0.28.1600.872@0.28.1600.872" timestamp="1582548768849" />
     <state width="493" height="722" key="GridCell.Tab.1.bottom" timestamp="1582497836968">
       <screen x="0" y="28" width="1600" height="872" />
     </state>

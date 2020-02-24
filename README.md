@@ -1,7 +1,7 @@
 Patterns
 ---
 ---
-## 1) DI
+## 1) DI (Abstrct factory)
 ## 2) Observer
 ## 3) Singleton (однопоточная реализация)
-## 4) Abstract Factory_DI
+## 4) Abstract Factory (DI)

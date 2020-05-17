@@ -1,5 +1,5 @@
 Patterns
----
+----
 ---
 ## 1) DI (Abstract factory)
 ## 2) Observer
